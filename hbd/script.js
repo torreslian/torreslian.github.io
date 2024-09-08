@@ -43,22 +43,28 @@ const questions = [
     successMessage: "Group of friends na nakatambay lagi sa coffee shop"
   },
   {
+    question: "What is Tita Anna's dream country?",
+    answer: "CANADA",
+    clue: "Clue: Located in North America",
+    successMessage: "Maple and autumn and free healthcare 😍"
+  },
+  {
     question: "What is Tita Anna and Ate Leng's foot size?",
     answer: "8",
     clue: "Must be a digit (number)",
     successMessage: "Ehem new shoes"
   },
   {
-    question: "What country did Tita Anna and Ate Leng go to last year?",
-    answer: "JAPAN",
-    clue: "Clue: Disney!!!",
-    successMessage: "They went together with Andoy and Ate Cy"
-  },
-  {
     question: "What is Tita Anna's legal birthday as shown in her ID?",
     answer: "OCTOBER 8, 1980",
     clue: "Format should be: (ex. September 8, 2024)",
     successMessage: "Fascinating, isn't it?"
+  },
+  {
+    question: "What country did Tita Anna and Ate Leng go to last year?",
+    answer: "JAPAN",
+    clue: "Clue: Disney!!!",
+    successMessage: "They went together with Andoy and Ate Cy"
   },
   // ... add other questions with success messages
 ];
