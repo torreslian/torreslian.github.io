@@ -27,7 +27,7 @@ const questions = [
   {
     question: "When did Ate Leng start working and where? State the year and company (ex. 2024, jollibee)",
     answers: ["2022, PAGIBIG", "2022, PAGIBIG FUND"],
-    clue: "Government agency",
+    clue: "Clue: Government agency",
     successMessage: "She does corporate planning"
   },
   {
@@ -51,7 +51,7 @@ const questions = [
   {
     question: "What is Tita Anna and Ate Leng's foot size?",
     answer: "8",
-    clue: "Must be a digit (number)",
+    clue: "Clue: Must be a digit (number)",
     successMessage: "Ehem new shoes"
   },
   {
