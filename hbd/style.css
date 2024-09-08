@@ -1,0 +1,183 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #ffe1dd;
+  color: #3a144e;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.main-container {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#question-container {
+  margin: 50px auto;
+  width: 400px;
+  padding: 20px;
+  background-color: #ffa8c3;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.1);
+}
+
+#question {
+  margin-bottom: 15px;
+}
+
+#clue {
+  font-size: 0.8rem;
+  /* Smaller font size for the clue */
+  color: #a65485;
+  /* Lighter pink color for the clue */
+}
+
+#answer-box {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ffdbde;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#check-button {
+  background-color: #f78da7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#question-header {
+  display: flex;
+  /* Or use display: grid; */
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  /* Optional: Adjust width as needed */
+  margin: 0 auto;
+  /* Center the container on the page */
+  font-size: 24px;
+
+}
+
+
+/* FOOTER */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f78da8b9;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart {
+  animation: blink 1s linear infinite;
+  width: 14px;
+  height: 14px;
+  margin-left: 5px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.logo {
+  font-size: 4rem;
+}
+
+
+
+
+/* DESIGN OF THE LIBRARY */
+.swal-barbie-theme {
+  background-color: #ffc0cb;
+  font-family: "Arial", sans-serif;
+  color: #3a144e;
+}
+
+.swal-barbie-theme .swal-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.swal-barbie-theme .swal-modal {
+  border-radius: 10px;
+}
+
+.swal-barbie-theme .swal-button {
+  background-color: #ff69b4;
+  color: white;
+}
+
+
+
+
+/* MEDIA QUERIES!!! */
+@media (max-width: 480px) {
+  #question-container {
+    margin: auto;
+    width: 300px;
+    padding: 10px;
+    background-color: #ffa8c3;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  #answer-box {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ffdbde;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  #check-button {
+    background-color: #f78da7;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  footer {
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    /* Center the text within the footer */
+    background-color: #Ed5C9B;
+    /* Adjust opacity as needed */
+    /*color: black; /* Ensure text readability on transparent background */
+  }
+
+  footer p {
+    font-size: 10px;
+    color: white;
+  }
+}

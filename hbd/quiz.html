@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main-container">
+    <div id="question-header">
+      <h2 id="questionHeader">Question 1</h2>
+    </div>
+    <div id="question-container">
+      <p id="question"></p>
+      <p id="clue"></p>
+      <input type="text" id="answer-box">
+      <button id="check-button">Check</button>
+    </div>
+    <div>
+      <p style="font-size: 10px;">First person to answer all the questions correctly wins 500 Pesos!!<br>
+        !So don't share your answers!</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    Created by: Lian T. &nbsp; | &nbsp; Made with <svg class="heart" viewBox="0 0 24 24" fill="none"
+      xmlns="http://www.w3.org/2000/svg" stroke="">
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+        stroke-width="1.488">
+      </g>
+      <g id="SVGRepo_iconCarrier">
+        <path
+          d="M2 9.1371C2 14 6.01943 16.5914 8.96173 18.9109C10 19.7294 11 20.5 12 20.5C13 20.5 14 19.7294 15.0383 18.9109C17.9806 16.5914 22 14 22 9.1371C22 4.27416 16.4998 0.825464 12 5.50063C7.50016 0.825464 2 4.27416 2 9.1371Z"
+          fill="#ff6999"></path>
+      </g>
+    </svg>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    window.onload = () => {
+      Swal.fire({
+        title: "Welcome to AnnaLeng's Fun Facts Quiz",
+        text: "Instruction: There are 9 questions related to our birthday celebrants. No multiple choices here, but don't sweat it - there are some clues to guide you. Win 500 pesos!",
+        imageUrl: "", // Optional image
+        confirmButtonColor: "#ff69b4",
+        customClass: "swal-barbie-theme" // Define custom CSS class
+      });
+    };
+  </script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
