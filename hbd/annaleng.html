@@ -839,7 +839,11 @@
       var step = 1;
       var stepMinutes = [2000, 2000, 1000, 1000];
       function init() {
-        box.addEventListener("click", openBox, false);
+        var box = document.getElementById("giftbox");
+        box.addEventListener("click", function () {
+          document.getElementById("open-sound").play();
+          openBox();
+        }, false);
       }
       function stepClass(step) {
         merrywrap.className = 'merrywrap';
@@ -865,7 +869,6 @@
     };
 
     function reveal() {
-      document.getElementById("open-sound").play();
       document.querySelector('.merrywrap').style.backgroundColor = 'transparent';
 
       loop();
