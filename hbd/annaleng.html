@@ -839,17 +839,15 @@
       var step = 1;
       var stepMinutes = [2000, 2000, 1000, 1000];
       function init() {
-        var box = document.getElementById("giftbox");
-        box.addEventListener("click", function () {
-          document.getElementById("open-sound").play();
-          openBox();
-        }, false);
+        box.addEventListener("click", openBox, false);
       }
       function stepClass(step) {
         merrywrap.className = 'merrywrap';
         merrywrap.className = 'merrywrap step-' + step;
       }
       function openBox() {
+        var audio = document.getElementById("open-sound");
+        audio.play();
         if (step === 1) {
           box.removeEventListener("click", openBox, false);
         }
